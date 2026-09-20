@@ -12,8 +12,8 @@ public class question8 {
                 System.out.println(i);
             }
 
+
+
         }
-
     }
-
 }
