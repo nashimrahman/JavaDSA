@@ -6,15 +6,12 @@ public class question2 {
     static void main(String[] args) {
         System.out.println("Print counting from n to 1");
         Scanner sc = new Scanner(System.in);
+        System.out.print("Enter n: ");
         int n = sc.nextInt();
 
-        int p = 1;
+        for (int i=n ; i >=1 ; i--) {
+            System.out.println(i);
 
-        int i = 0;
-        while (i <= n){
-            n= n-p;
-            System.out.println(n);
-            i++;
         }
 
 
