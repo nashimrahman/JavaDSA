@@ -21,7 +21,7 @@ public class question4 {
             // spaces
             for (int col= 1; col <= n- row; col++){
                 // print space
-                System.out.print(" ");
+                System.out.print("  ");
             }
             // stars
             for (int col= 1; col <= n; col++){
