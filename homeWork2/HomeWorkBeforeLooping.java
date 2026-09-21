@@ -9,7 +9,7 @@ public class HomeWorkBeforeLooping {
     static void percentage(){
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter number of subjects: ");
-        int n = sc.nextInt(); // subjects... n=5 means 5 subjects
+        int n = sc.nextInt(); 
         int FullMarks = n*100; // fullMarks will be 500
 
         int add= 0;
