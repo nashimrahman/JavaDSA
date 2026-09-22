@@ -2,6 +2,7 @@ package patternPrinting;
 
 /*
 
+
         *
       *   *
     *       *
@@ -19,12 +20,13 @@ public class question10 {
 
         for (int row= 1; row<= n; row++){
             //for each row-> variable column
-            //outer spaces
+
+            //part 1
             for (int col= 1; col<= n-row; col++){
                 //print space
                 System.out.print("  ");
             }
-            //solid stars
+            //part 2
             if (row== 1 || row== n){
                 for (int col= 1; col<= 2*row-1; col++){
                     //print stars

@@ -38,12 +38,5 @@ public class repeatQuestion9 {
         }
 
 
-
-
-
-
-
-
-
     }
 }
