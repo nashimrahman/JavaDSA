@@ -5,12 +5,12 @@ public class question8 {
 
         //rows
         int n = 4;
-
+        //To control rows
         for(int row=1; row<= n; row++){
-
             //for each row -> 6 columns
             //full stars
             for (int col=1; col<= 6 ; col++){
+
                 if(row == 1 || row==n){
                     System.out.print("* ");
                 } else {
