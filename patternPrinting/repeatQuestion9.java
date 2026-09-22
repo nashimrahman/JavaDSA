@@ -14,7 +14,6 @@ package patternPrinting;
  */
 
 
-
 public class repeatQuestion9 {
     static void main(String[] args) {
 
