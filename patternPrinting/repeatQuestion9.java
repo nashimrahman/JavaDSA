@@ -4,10 +4,11 @@ package patternPrinting;
 
 
  *
+ * *
  *   *
- *       *
- *           *
- * * * * * * * * *
+ *     *
+ * * * * *
+
 
 
  */
