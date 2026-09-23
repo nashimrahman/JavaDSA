@@ -2,7 +2,6 @@ package patternPrinting;
 
 /*
 
-
         *
       *   *
     *       *
@@ -10,7 +9,9 @@ package patternPrinting;
 * * * * * * * * *
 
 
+
 */
+
 
 
 public class question10 {
