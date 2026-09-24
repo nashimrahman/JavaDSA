@@ -2,24 +2,27 @@ import java.util.Scanner;
 
 public class roughWork {
     static void main(String[] args) {
-        calculate(2,3,4);
+        int n = 8;
 
-    }
-        public static void calculate(int a, int b, int optr) {
-            // code here
-            if(optr ==1){
-                System.out.println(a+b);
+        for (int i =1; i<= n; i++){
+
+            if (i*i==n){
+                System.out.print(i);
             }
-            else if(optr==2){
-                System.out.println(a-b);
+            else {
+
             }
-            else if (optr==3){
-                System.out.println(a*b);
-            }
-            else{
-                System.out.println("Invalid Input");
-            }
+
+
+
+
+
         }
 
 
+
+
+
+
+    }
 }
