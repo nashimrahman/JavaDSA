@@ -12,6 +12,8 @@ public class question7 {
     }
     static int n(int n){
         return n*2;
+
+
     }
 
 
