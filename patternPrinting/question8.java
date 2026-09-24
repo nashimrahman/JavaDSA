@@ -13,6 +13,7 @@ package patternPrinting;
 */
 
 
+
 public class question8 {
     static void main(String[] args) {
 
