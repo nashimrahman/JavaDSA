@@ -8,6 +8,7 @@ public class theory2 {
 
         int[] arr = new int[5];
 
+        //finding row length
         int n= arr.length;
 
         //taking input
