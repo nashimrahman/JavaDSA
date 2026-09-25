@@ -1,4 +1,4 @@
-package Array;
+package Array1D;
 
 public class theory {
     static void main(String[] args) {

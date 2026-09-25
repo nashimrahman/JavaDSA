@@ -1,4 +1,4 @@
-package Array;
+package Array1D;
 
 public class maxValue {
     static void main(String[] args) {

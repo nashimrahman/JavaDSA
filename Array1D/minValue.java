@@ -1,4 +1,4 @@
-package Array;
+package Array1D;
 
 public class minValue {
     static void main(String[] args) {

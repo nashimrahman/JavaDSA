@@ -1,6 +1,6 @@
-package Array;
+package Array2D;
 
-public class theory2D {
+public class theory2 {
     static void main(String[] args) {
         int arr[][]= {
                 {1,5,5},

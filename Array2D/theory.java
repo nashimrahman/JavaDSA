@@ -1,6 +1,6 @@
-package Array;
+package Array2D;
 
-public class TwoDiamensionalArray {
+public class theory {
     static void main(String[] args) {
         //declaration
         int arr[][];
