@@ -19,8 +19,6 @@ public class sum2DarrayElements {
                 int value = arr[rowIndex][colIndex];
                 sum+= value;
             }
-            //move to next row
-            System.out.println();
         }
 
         //print sum
