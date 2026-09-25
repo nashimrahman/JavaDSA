@@ -33,6 +33,7 @@ public class TwoDiamensionalArray {
 */
 
 
+        //traverse
         int rowLength = brr.length;
         for (int row=0; row<= rowLength-1; row++){
           //finding column for each row
