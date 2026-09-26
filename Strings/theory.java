@@ -26,17 +26,6 @@ public class theory {
         System.out.println(str.length());
 
 
-
-        //concat string
-        System.out.println(str.concat(" Rahman")); //concat creates a new string and stores "Nashim Rahman"
-
-        //correct way concat strings
-        str = str.concat(" Rahman");
-        System.out.println(str);
-        System.out.println("Length after concat: "+str.length());
-        //now the string length becomes 13 from 6
-
-
         //access characters -> Note: it is not an array
         System.out.println(str.charAt(0));
         System.out.println(str.charAt(5));
