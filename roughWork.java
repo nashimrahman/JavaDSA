@@ -3,28 +3,41 @@ import java.util.Scanner;
 public class roughWork {
     static void main(String[] args) {
 
-        int arr[] = {2, 7, 8, 6, 1};
 
-        int maxValue= arr[0];
-        int secondLargest = arr[0];
+        // your code goes here
+        Scanner sc = new Scanner(System.in);
+        int noOfTestCase= sc.nextInt();
 
-        for (int i=0; i<= arr.length-1; i++){
-            //find the maximum value
-            if (arr[i] >= maxValue){
-                maxValue= arr[i];
+
+        for (int i=1; i<= noOfTestCase; i++){
+
+            //no of elements in the array
+            int noOfElements = sc.nextInt();
+
+            //declare and allocate the array
+            int arr[] = new int [noOfElements];
+            int n= arr.length;
+
+            //inserting values in the array
+            for (int index=0; index<= n-1; index++){
+                arr[index] = sc.nextInt();
             }
 
-            else if (arr[i] > secondLargest && arr[i] != maxValue ){
-                secondLargest = arr[i];
+            //finding maxValue of the arrays
+            int maxValue = arr[0];
+            for (int index=0; index <= n-1; index++){
+                if (arr[index] >= maxValue) {
+                    maxValue= arr[index];
+                }
             }
 
+            System.out.println("Max value is: "+maxValue);
         }
-        //print
-        System.out.println(secondLargest);
+
+
+
+
 
     }
-
-
-
 
 }
