@@ -6,6 +6,7 @@ public class question5 {
 
         int originalDigit = num;
         int reverseDigit= reverseDigit(num);
+
         if (originalDigit == reverseDigit){
             return true;
         }
