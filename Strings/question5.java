@@ -11,6 +11,7 @@ public class question5 {
 
     static String reverseString(String name){
 
+        //finding the string length
         int n= name.length();
 
         String reverse ="";
