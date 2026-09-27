@@ -37,8 +37,6 @@ public class question1 {
         }
 
 
-
-
-
+        
     }
 }
