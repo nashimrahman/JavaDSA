@@ -20,7 +20,14 @@ public class question4 {
      }
 
     static void main() {
-        System.out.println(reverseDigit(89683259));
+         int original= 121;
+        System.out.println(reverseDigit(original));
+        if (reverseDigit(original) == original){
+            System.out.println("True");
+        }
+        else {
+            System.out.println("false");
+        }
 
 
 
