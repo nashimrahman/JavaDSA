@@ -2,6 +2,8 @@ package BasicMaths;
 
 public class question1 {
 
+    // get the number of digits
+
     static void getDigits(int num){
 
         while (num !=0){

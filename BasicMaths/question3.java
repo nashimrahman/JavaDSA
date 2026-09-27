@@ -2,6 +2,8 @@ package BasicMaths;
 
 public class question3 {
 
+    // find the sum of digits
+
     static int sumDigits(int num){
 
         int sum=0;

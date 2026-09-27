@@ -2,6 +2,8 @@ package BasicMaths;
 
 public class question2 {
 
+    // count the number of digits
+
     static int countDigit(int num){
 
         int count=0;
