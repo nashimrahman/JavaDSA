@@ -11,7 +11,8 @@ public class question7 {
             return false;
         }
 
-        for (int i=2; i<=num-1; i++){
+        //for optimized solution-> loop will run to root n
+        for (int i=2; i*i <= num; i++){
             if (num%i ==0){
                 //not a prime number
                 return false;
