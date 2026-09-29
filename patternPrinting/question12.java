@@ -30,6 +30,8 @@ public class question12 {
             //move to next row
             System.out.println();
 
+
+
         }
 
     }
