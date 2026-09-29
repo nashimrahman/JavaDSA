@@ -26,5 +26,8 @@ public class question5 {
             //move to next row
             System.out.println();
         }
+
+
+
     }
 }
