@@ -1,7 +1,5 @@
 package Strings;
 
-import jdk.jshell.EvalException;
-
 public class question4 {
     static void main() {
         //Q. reverse a String

@@ -4,7 +4,7 @@ public class question3 {
     static void main() {
         //find number vowels in a word
 
-        String str = "Tukubun";
+        String str = "HelloWorld";
 
         int count=0;
         for (int i=0; i<= str.length()-1; i++){
