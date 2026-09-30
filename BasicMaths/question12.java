@@ -9,8 +9,8 @@ public class question12 {
             if (prime == true){
                 System.out.println(digits);
             }
-
         }
+
     }
 
     static boolean isPrime(int num){
