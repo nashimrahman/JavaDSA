@@ -3,32 +3,46 @@ import java.util.Scanner;
 
 public class roughWork {
 
-    public static boolean isHappy(int num) {
+    public static int maxProfit(int[] prices) {
+        int n = prices.length;
+        int indexOfBuyDay=0;
 
-        int sum=0;
-        while(num !=0){
-            int digit = num%10;
-            sum = (int) (sum + Math.pow(digit,2));
-            //removes the digit
-            num/= 10;
+        int minValue= prices[0];
+        for(int i=0; i<=n-1; i++ ){
+            if(prices[i]<= minValue){
+                minValue = prices[i];
+                indexOfBuyDay = i;
+            }
+            System.out.println("index of buy day: "+indexOfBuyDay);
+            System.out.println("checking: "+prices[n-1]);
+            if(indexOfBuyDay == prices[n-1]){
+                return 0;
+            }
         }
 
-        int sum2=0;
-        while(sum!=0){
-            int digit = sum%10;
-            sum2 = (int) (sum2 + Math.pow(digit,2));
-            //removes the digit
-            sum/=10;
+
+
+        int buyRs = minValue;
+
+        int maxValue= prices[indexOfBuyDay];
+        for(int i= indexOfBuyDay; i<= n-1; i++){
+            if(prices[i] >= maxValue){
+                maxValue = prices[i];
+            }
 
         }
 
 
-
-        return false;
+        return maxValue-buyRs;
     }
 
     static void main() {
-        System.out.println(isHappy(19));
+
+        int[] arr= {2,4,1};
+        System.out.println(maxProfit(arr));
+
+
+
     }
 
 
