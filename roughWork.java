@@ -3,35 +3,43 @@ import java.util.Scanner;
 
 public class roughWork {
 
-    public static void main(String []argh) {
+    public static boolean containsDuplicate(int[] nums) {
+        int n= nums.length;
 
 
+        for (int i=0; i<= n-1; i++){
+           for (int j=i+1; j<= n-1; j++){
+               if (nums[i] == nums[j]){
+                   return true;
+               }
+
+           }
 
 
-    }
-
-    public ArrayList<Integer> getMinMax(int[] arr) {
-        // code Here
-        int n= arr.length;
-
-        int minValue=arr[0];
-        int maxValue=arr[0];
-        //comparing
-        for(int i=0; i<=n-1;i++){
-            if(arr[i]<= minValue){
-                minValue= arr[i];
-            }
-            else if(arr[i]>=maxValue){
-                maxValue=arr[i];
-            }
 
         }
-        ArrayList<Integer> arr2 = new ArrayList<>();
-        arr2.add(minValue);
-        arr2.add(maxValue);
 
-
-
-        return arr2;
+        return false ;
     }
+
+    static void main() {
+
+        int[]  arr= {1,1,2,3,4};
+        System.out.println(containsDuplicate(arr));
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
