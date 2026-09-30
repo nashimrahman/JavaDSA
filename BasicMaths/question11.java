@@ -1,6 +1,7 @@
 package BasicMaths;
 
 public class question11 {
+    // a perfect number-> sum of all the factors of a number which is equal to the number
     static boolean isPerfect(int num){
         int sum=1;
         for (int i=2; i*i<= num; i++){
