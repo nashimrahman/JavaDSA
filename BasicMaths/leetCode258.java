@@ -1,6 +1,6 @@
 package BasicMaths;
 
-public class question6 {
+public class leetCode258 {
     //leetcode 258
     public static int addDigits(int num) {
 
@@ -14,6 +14,7 @@ public class question6 {
 
 
         //this loop taking the digits until the sum becomes single digit
+        int ans = 0;
         while (sum >= 10) {
             //initializing the final sum variable
             int sum2 = 0;
@@ -22,11 +23,12 @@ public class question6 {
                 sum2 = sum2 + digit;
                 sum /= 10;
             }
-            sum = sum2;
+            //updating the value of ans
+            ans = sum2;
         }
 
 
-        return sum;
+        return ans;
     }
 
     static void main() {

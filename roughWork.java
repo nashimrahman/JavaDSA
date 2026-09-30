@@ -3,29 +3,32 @@ import java.util.Scanner;
 
 public class roughWork {
 
-    public static boolean containsDuplicate(int[] nums) {
-        int n= nums.length;
+    public static boolean isHappy(int num) {
 
+        int sum=0;
+        while(num !=0){
+            int digit = num%10;
+            sum = (int) (sum + Math.pow(digit,2));
+            //removes the digit
+            num/= 10;
+        }
 
-        for (int i=0; i<= n-1; i++){
-           for (int j=i+1; j<= n-1; j++){
-               if (nums[i] == nums[j]){
-                   return true;
-               }
-
-           }
-
-
+        int sum2=0;
+        while(sum!=0){
+            int digit = sum%10;
+            sum2 = (int) (sum2 + Math.pow(digit,2));
+            //removes the digit
+            sum/=10;
 
         }
 
-        return false ;
+
+
+        return false;
     }
 
     static void main() {
-
-        int[]  arr= {1,1,2,3,4};
-        System.out.println(containsDuplicate(arr));
+        System.out.println(isHappy(19));
     }
 
 

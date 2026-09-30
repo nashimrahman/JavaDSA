@@ -1,6 +1,7 @@
 package BasicMaths;
 
 public class question10 {
+    //armstrong number
     static int getDigits(int n){
 
         int count=0;
