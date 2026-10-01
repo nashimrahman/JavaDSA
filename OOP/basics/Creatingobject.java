@@ -1,4 +1,4 @@
-package OOP;
+package OOP.basics;
 
 public class Creatingobject {
     static void main(String[] args) {
