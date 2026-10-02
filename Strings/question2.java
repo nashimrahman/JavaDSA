@@ -5,6 +5,8 @@ public class question2 {
         //get length of string
 
         String str = "My name is Nashim";
+        System.out.println(str.length());
+
         char[] ch = str.toCharArray();
         int l= ch.length;
         System.out.println(l);

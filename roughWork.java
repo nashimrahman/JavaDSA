@@ -3,19 +3,13 @@ import java.util.Scanner;
 
 public class roughWork {
 
-    public static void reverseString(char[] s) {
-        String reverse="";
-        int n = s.length;
-        for (int i=n-1; i >=0 ; i--){
-            reverse += s[i];
-        }
+    public static boolean isPowerOfFour(int n) {
+        return true;
 
-        System.out.println(reverse);
     }
 
     static void main() {
-        char[] s= {'s','e','l'};
-        reverseString(s);
+        System.out.println(isPowerOfFour(129140163));
     }
 
 
