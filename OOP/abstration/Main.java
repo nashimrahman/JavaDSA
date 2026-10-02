@@ -1,6 +1,6 @@
 package OOP.abstration;
 
-public class main {
+public class Main {
 
     public static void doBirdStuff(Bird b){
         b.eat();

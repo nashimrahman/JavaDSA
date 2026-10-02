@@ -1,14 +1,14 @@
 package OOP.abstration;
 
-class sparrow extends Bird{
+class sparrow implements Bird{
 
     @Override
-    void fly() {
+    public void fly() {
         System.out.println("sparrow flying");
     }
 
     @Override
-    void eat() {
+    public void eat() {
         System.out.println("sparrow eating");
     }
 
