@@ -5,6 +5,13 @@ public class car extends vehicle{
     private int noOfWheels;
     private int speed;
 
+    //constructor
+    public car(String type, String brand, int noOfWheels, int speed) {
+        super(type, brand);
+        this.noOfWheels = noOfWheels;
+        this.speed = speed;
+    }
+
     //getter and setter
     public int getNoOfWheels() {
         return noOfWheels;
@@ -15,13 +22,6 @@ public class car extends vehicle{
     }
 
     public void setSpeed(int speed) {
-        this.speed = speed;
-    }
-
-    //constructor
-    public car(String type, String brand, int noOfWheels, int speed) {
-        super(type, brand);
-        this.noOfWheels = noOfWheels;
         this.speed = speed;
     }
 
