@@ -8,6 +8,7 @@ public class car extends vehicle{
         super(brand, model, nOfDoors);
         this.noOfseats = noOfseats;
     }
+
     @Override
     public void drive(){
         System.out.println(getBrand() + " is driving...");
