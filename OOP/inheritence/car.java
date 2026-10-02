@@ -36,7 +36,7 @@ public class car extends vehicle{
     // so it is decided in the runtime to decide which method should call
     @Override
     protected void drive() {
-        System.out.println("Car is Driving...\n");
+        System.out.println(getBrand()+" is Driving...\n");
     }
 
     public void drive(String Greet) {

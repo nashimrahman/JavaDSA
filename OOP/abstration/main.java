@@ -1,0 +1,31 @@
+package OOP.abstration;
+
+public class main {
+
+    public static void doBirdStuff(Bird b){
+        b.eat();
+        b.fly();
+
+    }
+    public static void main(String[] args) {
+        doBirdStuff(new crow());
+        doBirdStuff(new sparrow());
+
+
+
+
+/*
+
+        Bird b = new Bird(); -> can't create object
+        Bird b = new sparrow();
+        b.eat();
+        b.fly();
+
+        b = new crow();
+        b.fly();
+        b.eat();
+*/
+
+
+    }
+}

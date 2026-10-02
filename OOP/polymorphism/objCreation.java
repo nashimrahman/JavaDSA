@@ -7,9 +7,11 @@ public class objCreation {
 //        car1.drive();
 //        car1.getInfo();
 
+        car car3 = new car();
         //polymorphism runtime
         drive(car1);
         drive(bike1);
+        drive(car3);
 
     }
 

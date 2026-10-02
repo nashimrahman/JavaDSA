@@ -16,7 +16,7 @@ public class objectCreation {
 
         vehicle v3 = new car("CAR", "Audi", 5, 180);
         //method overriding (runtime polymorphism)
-        v3.drive();
+        v3.drive(); // -> car ka drive method call hoga
 
         //method overloading (compile time polymorphism)
         c1.drive("hello");
