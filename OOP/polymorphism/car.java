@@ -10,7 +10,7 @@ public class car extends vehicle{
     }
     @Override
     public void drive(){
-        System.out.println(getBrand() + " is driving");
+        System.out.println(getBrand() + " is driving...");
 
     }
 

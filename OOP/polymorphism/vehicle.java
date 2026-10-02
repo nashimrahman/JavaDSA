@@ -3,15 +3,15 @@ package OOP.polymorphism;
 public class vehicle {
     private String brand;
     private String model;
-    private int nOfDoors;
+    private int nOfTyres;
 
     public vehicle(){
     }
 
-    public vehicle(String brand, String model, int nOfDoors) {
+    public vehicle(String brand, String model, int nOfTyres) {
         this.brand = brand;
         this.model = model;
-        this.nOfDoors = nOfDoors;
+        this.nOfTyres = nOfTyres;
     }
 
     public void getInfo(){
@@ -33,6 +33,6 @@ public class vehicle {
     }
 
     public int getNoOfDoors() {
-        return nOfDoors;
+        return nOfTyres;
     }
 }
