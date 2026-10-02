@@ -1,9 +1,11 @@
 package OOP.inheritence;
 
 public class car extends vehicle{
+    //attributes
     private int noOfWheels;
     private int speed;
 
+    //getter and setter
     public int getNoOfWheels() {
         return noOfWheels;
     }
@@ -16,12 +18,14 @@ public class car extends vehicle{
         this.speed = speed;
     }
 
+    //constructor
     public car(String type, String brand, int noOfWheels, int speed) {
         super(type, brand);
         this.noOfWheels = noOfWheels;
         this.speed = speed;
     }
 
+    //methods
     @Override
     public void getVehicleInfo() {
         System.out.println(getBrand()+" "+getType());

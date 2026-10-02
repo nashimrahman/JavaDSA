@@ -1,9 +1,11 @@
 package OOP.inheritence;
 
 public class bike extends vehicle{
+    //attributes
     private int noOfWheels;
     private int speed;
 
+    //methods
     public int getNoOfWheels() {
         return noOfWheels;
     }
@@ -20,6 +22,7 @@ public class bike extends vehicle{
         this.speed = speed;
     }
 
+    //constructor
     public bike(String type, String brand, int noOfWheels, int speed) {
         super(type, brand);
         this.noOfWheels = noOfWheels;

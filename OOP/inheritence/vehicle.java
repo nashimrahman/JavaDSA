@@ -2,17 +2,21 @@ package OOP.inheritence;
 
 public class vehicle {
 
+    //attributes
     private String brand;
     private String type;
 
+    //default constructor
     public vehicle() {
     }
 
+    //parameterized constructor
     public vehicle(String type, String brand) {
         this.brand = brand;
         this.type = type;
     }
 
+    //getter and setter
     public String getBrand() {
         return brand;
     }
@@ -29,6 +33,7 @@ public class vehicle {
         this.type = model;
     }
 
+    //methods
     public void drive(){
         System.out.println("Vehicle is Driving...\n");
     }
