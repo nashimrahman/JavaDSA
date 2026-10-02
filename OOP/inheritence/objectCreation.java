@@ -8,6 +8,7 @@ public class objectCreation {
         car c1 = new car("CAR", "BMW", 4, 120);
         c1.drive();
         c1.getVehicleInfo();
+        v1.drive();
 
         bike b1 = new bike("BIKE", "RoyalEnfield", 4, 120);
         b1.drive();

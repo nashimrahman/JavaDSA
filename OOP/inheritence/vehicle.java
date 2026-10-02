@@ -35,8 +35,9 @@ public class vehicle {
 
     //methods
     public void drive(){
-        System.out.println("Vehicle is Driving...\n");
+        System.out.println(brand+" is Driving...\n");
     }
+
 
     public void getVehicleInfo(){
         System.out.println("Brand: " + getBrand()+"\n");
