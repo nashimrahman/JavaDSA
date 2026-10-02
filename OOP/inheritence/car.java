@@ -6,6 +6,7 @@ public class car extends vehicle{
     private int speed;
 
     //constructor
+    car(){};
     public car(String type, String brand, int noOfWheels, int speed) {
         super(type, brand);
         this.noOfWheels = noOfWheels;
@@ -31,8 +32,10 @@ public class car extends vehicle{
         System.out.println(getBrand()+" "+getType());
     }
 
+    //runtime polymorphism-> drive method is in both vehicle and car class,
+    // so it is decided in the runtime to decide which method should call
     @Override
-    public void drive() {
+    protected void drive() {
         System.out.println("Car is Driving...\n");
     }
 

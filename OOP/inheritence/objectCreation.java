@@ -21,6 +21,14 @@ public class objectCreation {
         //method overloading (compile time polymorphism)
         c1.drive("hello");
 
+        car c = new car();
+        doDrive(c);
 
+
+
+    }
+
+    public static void doDrive(vehicle v ){
+        System.out.println("Driving");
     }
 }

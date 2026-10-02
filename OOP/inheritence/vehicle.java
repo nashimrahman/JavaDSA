@@ -16,6 +16,20 @@ public class vehicle {
         this.type = type;
     }
 
+    //methods
+    protected void drive(){
+        System.out.println(brand+" is Driving...\n");
+    }
+
+    public void getVehicleInfo(){
+        System.out.println("Brand: " + getBrand()+"\n");
+    }
+
+
+
+
+
+
     //getter and setter
     public String getBrand() {
         return brand;
@@ -31,16 +45,6 @@ public class vehicle {
 
     public void setModel(String model) {
         this.type = model;
-    }
-
-    //methods
-    public void drive(){
-        System.out.println(brand+" is Driving...\n");
-    }
-
-
-    public void getVehicleInfo(){
-        System.out.println("Brand: " + getBrand()+"\n");
     }
 
 }
