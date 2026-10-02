@@ -1,11 +1,11 @@
 package OOP.abstration;
 
 //abstract class or interface both are same -> we can not creat obj of abstract class
-interface Bird {
+ Bird {
 
-    abstract void fly();
+     void fly();
 
-    abstract void eat();
+     void eat();
 
 }
 
