@@ -76,6 +76,17 @@ public class linkedList {
         LinkedList<Integer> list4 = new LinkedList<>();
 //        list4.ensureCapacity(100); -> not available in LinkedList
 
+        list4.add(20);
+        list4.add(30);
+        list4.add(15);
+        list4.add(20);
+        list4.add(30);
+        list4.add(20);
+        System.out.println("List 4: "+list4);
+
+        //lastIndexOf() -> observe the output
+        list4.lastIndexOf(20);
+
 
 
 
