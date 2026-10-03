@@ -2,7 +2,7 @@ package collectionFramework;
 import java.util.*;
 
 
-public class LinkedListt {
+public class linkedList {
     static void main(String[] args) {
 
         Collection<Integer> c1 = new LinkedList<>();
