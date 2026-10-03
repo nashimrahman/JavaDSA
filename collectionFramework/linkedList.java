@@ -84,6 +84,8 @@ public class linkedList {
         list4.addAll(list);
         System.out.println("List 4: "+list4);
 
+// special LinkedList methods:
+
         //lastIndexOf() -> observe the output
         list4.lastIndexOf(20);
 
