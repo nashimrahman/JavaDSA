@@ -1,13 +1,13 @@
 package collectionFramework;
 import java.util.*;
 
-public class basics {
+
+public class LinkedListt {
     static void main(String[] args) {
 
-        //List or Collection -> interface
-        Collection<Integer> c1 = new ArrayList<>();
-        List<Integer> list = new ArrayList<>();
-        ArrayList<Integer> list2 = new ArrayList<>();
+        Collection<Integer> c1 = new LinkedList<>();
+        List<Integer> list = new LinkedList<>();
+        LinkedList<Integer> list2 = new LinkedList<>();
 
         c1.add(10);
         c1.add(20);
@@ -69,12 +69,12 @@ public class basics {
 
 
         // clone() -> to clone a list
-        ArrayList<Integer> newList =(ArrayList<Integer>) ((ArrayList<Integer>) list).clone();
+        LinkedList<Integer> newList =(LinkedList<Integer>) ((LinkedList<Integer>) list).clone();
         System.out.println("New List: "+newList);
 
         // ensureCapacity() -> to set the limit
-        ArrayList<Integer> list4 = new ArrayList<>();
-        list4.ensureCapacity(100);
+        LinkedList<Integer> list4 = new LinkedList<>();
+//        list4.ensureCapacity(100); -> not available in LinkedList
 
 
 
