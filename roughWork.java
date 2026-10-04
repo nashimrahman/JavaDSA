@@ -1,31 +1,40 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class roughWork {
 
 
+     public static int getSecondLargest(int[] arr) {
+        // code here
+        int largest = arr[0];
+        int secondLargest = -1;
+
+        for(int i =0; i<= arr.length-1; i++){
+            if(arr[i] >= largest){
+                secondLargest = largest;
+                largest = arr[i];
+
+            }
+            else if( arr[i]> secondLargest && arr[i]< largest){
+                secondLargest = arr[i];
+            }
+
+
+        }
+
+
+
+
+        return secondLargest;
+    }
+
 
     static void main() {
-        int[] arr1 = {4,9,5};
-        int[] arr2 = {9,4,9,8,4};
+        int[] arr = {12, 35, 1, 10, 34, 1};
+        System.out.println(getSecondLargest(arr));
 
 
 
     }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 }

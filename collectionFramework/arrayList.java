@@ -1,7 +1,7 @@
 package collectionFramework;
 import java.util.*;
 
-public class basics {
+public class arrayList {
     static void main(String[] args) {
 
         //List or Collection -> interface
