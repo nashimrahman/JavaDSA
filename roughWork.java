@@ -15,7 +15,6 @@ public class roughWork {
 
 //
 //    static void main() {
-//
 //        int[] arr= {1,2,3,4};
 //        System.out.println(Arrays.toString(runningSum(arr)));
 //
