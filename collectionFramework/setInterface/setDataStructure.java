@@ -5,6 +5,7 @@ import java.util.*;
 public class setDataStructure {
     static void main(String[] args) {
 
+        // HashSet -> O(1)
         // to store unique value and unordered
         Set<Integer> set = new HashSet<>();
         Set<Integer> set2 = new HashSet<>();
@@ -25,16 +26,7 @@ public class setDataStructure {
         set.retainAll(set2); //printing all the common element from the both set
         System.out.println("SET2: "+ set2);
 
-        // if i want to preserve the order and store unique values then i can use
-        Set<Integer> s = new LinkedHashSet<>();
 
-        s.add(20);
-        s.add(10);
-        s.add(10);
-        s.add(20);
-        s.add(40);
-        s.add(50);
-        System.out.println("LinkedHashSET: "+ s);
 
 
 
