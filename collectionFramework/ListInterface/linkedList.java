@@ -1,13 +1,13 @@
-package collectionFramework;
-
+package collectionFramework.ListInterface;
 import java.util.*;
 
-public class vector {
+
+public class linkedList {
     static void main(String[] args) {
 
-        Collection<Integer> c1 = new Vector<>();
-        List<Integer> list = new Vector<>();
-        Vector<Integer> list2 = new Vector<>();
+        Collection<Integer> c1 = new LinkedList<>();
+        List<Integer> list = new LinkedList<>();
+        LinkedList<Integer> list2 = new LinkedList<>();
 
         c1.add(10);
         c1.add(20);
@@ -69,11 +69,11 @@ public class vector {
 
 
         // clone() -> to clone a list
-        Vector<Integer> newList =(Vector<Integer>) ((Vector<Integer>) list).clone();
+        LinkedList<Integer> newList =(LinkedList<Integer>) ((LinkedList<Integer>) list).clone();
         System.out.println("New List: "+newList);
 
         // ensureCapacity() -> to set the limit
-        Vector<Integer> list4 = new Vector<>();
+        LinkedList<Integer> list4 = new LinkedList<>();
 //        list4.ensureCapacity(100); -> not available in LinkedList
 
         list4.add(30);
@@ -99,8 +99,6 @@ public class vector {
         list4.removeLast();
         System.out.println(list4);
 
-/*
-
         // peak() -> returns the first element
         System.out.println(list4.peek());
 
@@ -112,7 +110,6 @@ public class vector {
         list4.offer(69);
         System.out.println("After offer"+list4);
 
-*/
 
 
 

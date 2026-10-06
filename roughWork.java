@@ -2,39 +2,22 @@ import java.util.*;
 
 public class roughWork {
 
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
 
-     public static int getSecondLargest(int[] arr) {
-        // code here
-        int largest = arr[0];
-        int secondLargest = -1;
-
-        for(int i =0; i<= arr.length-1; i++){
-            if(arr[i] >= largest){
-                secondLargest = largest;
-                largest = arr[i];
-
-            }
-            else if( arr[i]> secondLargest && arr[i]< largest){
-                secondLargest = arr[i];
-            }
-
+            Scanner in = new Scanner(System.in);
+            String S = in.next();
+            int start = in.nextInt();
+            int end = in.nextInt();
+        System.out.println(S.substring(start, end));
 
         }
 
-
-
-
-        return secondLargest;
-    }
-
-
-    static void main() {
-        int[] arr = {12, 35, 1, 10, 34, 1};
-        System.out.println(getSecondLargest(arr));
-
-
-
-    }
-
-
+//
+//    static void main() {
+//
+//        int[] arr= {1,2,3,4};
+//        System.out.println(Arrays.toString(runningSum(arr)));
+//
+//    }
 }

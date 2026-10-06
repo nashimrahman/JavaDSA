@@ -1,4 +1,4 @@
-package collectionFramework;
+package collectionFramework.ListInterface;
 import java.util.*;
 
 public class arrayList {
