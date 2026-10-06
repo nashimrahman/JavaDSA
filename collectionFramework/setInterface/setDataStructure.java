@@ -4,24 +4,37 @@ import java.util.*;
 
 public class setDataStructure {
     static void main(String[] args) {
-        int[] nums1 = {1,2,2,1};
-        int[] nums2 = {2,2};
 
-        Set<Integer> list = new HashSet<>();
-        Set<Integer> list2 = new HashSet<>();
+        // to store unique value and unordered
+        Set<Integer> set = new HashSet<>();
+        Set<Integer> set2 = new HashSet<>();
+        set.add(10);
+        set.add(20);
+        set.add(30);
+        set.add(10);
+        set.add(44);
+        System.out.println("SET: "+ set);
 
-        for(int i=0; i<= nums1.length-1; i++){
-            list.add(nums1[i]);
-        }
+        set2.add(40);
+        set2.add(70);
+        set2.add(20);
+        set2.add(42);
+        set2.add(4);
 
-        for(int i=0; i<= nums2.length-1; i++){
-            list2.add(nums2[i]);
-        }
+        System.out.println("SET2: "+ set2);
+        set.retainAll(set2); //printing all the common element from the both set
+        System.out.println("SET2: "+ set2);
 
-        list.retainAll(list2);
+        // if i want to preserve the order and store unique values then i can use
+        Set<Integer> s = new LinkedHashSet<>();
 
-        list.toArray();
-        System.out.println(list);
+        s.add(20);
+        s.add(10);
+        s.add(10);
+        s.add(20);
+        s.add(40);
+        s.add(50);
+        System.out.println("LinkedHashSET: "+ s);
 
 
 
