@@ -37,6 +37,10 @@ public class map {
         // containsValue()
         System.out.println(map2.containsValue("India2"));
 
+        //replace() -> it changes the corresponding value of the key
+        map2.replace("in", "Indonesia");
+        System.out.println(map2); // observe the output
+
 
 
 
