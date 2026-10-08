@@ -5,7 +5,7 @@ public class basics {
 
         int a=5;
         int b=6;
-        System.out.println(a & b);  // and
+        System.out.println(a & b);   // and
         System.out.println(a | b);   // or
         System.out.println(a ^ b);   // xor
         System.out.println(~a);      // flipping all bits
