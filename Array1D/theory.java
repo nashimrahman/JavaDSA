@@ -1,5 +1,7 @@
 package Array1D;
 
+import java.util.Arrays;
+
 public class theory {
     static void main(String[] args) {
         //declaration
@@ -8,6 +10,9 @@ public class theory {
         arr= new int[5];
         //init
         int brr[]={2,7,8,9};
+
+        // we can sort an array using sort()
+        Arrays.sort(brr);
 
         int n= brr.length;
 
