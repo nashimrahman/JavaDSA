@@ -10,7 +10,7 @@ public class basics {
         System.out.println(a ^ b);   // xor
         System.out.println(~a);      // flipping all bits
 
-        // left shift
+        // left shift   formula= n*2^i
         int n=1;
         for (int i=0; i< 32; i++){
            n = n << 1;  // left shift
@@ -19,10 +19,10 @@ public class basics {
         }
 
 
-        // right shift
+        // right shift    formula= n/2^i
         int m=100;
         for (int i=0; i< 10; i++){
-            m = m >> 1;  // left shift
+            m = m >> 1;  // right shift
             System.out.println();
             System.out.println(m);
         }
