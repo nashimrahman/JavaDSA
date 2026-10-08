@@ -7,7 +7,7 @@ public class someOperations {
         System.out.println(5 | 6);
         System.out.println(5^6);
         System.out.println(~5);
-        System.out.println(5 << 2); // 5*2pow2
+        System.out.println(5 << 3); // 5*2pow3
         System.out.println(8 >> 2); // 5/2pow2
 
     }
