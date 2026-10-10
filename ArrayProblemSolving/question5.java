@@ -2,6 +2,7 @@ package ArrayProblemSolving;
 
 public class question5 {
     static void main(String[] args) {
+        // count no of zero and one
         int[] arr = {1,0,1,0,0,1,1,1,1};
         int[] ans = countZeroAndOne(arr);
 
