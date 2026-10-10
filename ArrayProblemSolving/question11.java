@@ -2,6 +2,7 @@ package ArrayProblemSolving;
 
 public class question11 {
     static void main(String[] args) {
+        // right shift array positions by 1
         int[] arr= {1,2,5,3,70};
         int n= arr.length;
 
