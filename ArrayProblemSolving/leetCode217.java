@@ -8,9 +8,8 @@ public class leetCode217 {
         int[] arr= {3,6,8,9,9};
         System.out.println(containsDuplicate(arr));
 
-
-
     }
+
     public static boolean containsDuplicate(int[] arr) {
         Set<Integer> set = new HashSet<>();
         for (int i = 0; i <= arr.length - 1; i++) {
