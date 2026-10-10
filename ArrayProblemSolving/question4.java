@@ -9,9 +9,6 @@ public class question4 {
         System.out.println(ans[0]);
         System.out.println(ans[1]);
 
-
-
-
     }
 
     static int[] sum(int[] arr){
