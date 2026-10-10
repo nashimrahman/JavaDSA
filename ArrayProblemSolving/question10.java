@@ -10,7 +10,7 @@ public class question10 {
         int j= n-1;
 
         // two pointer approach
-        while(i<j){
+        while(i<=j){
             int temp= arr[i];
             arr[i]= arr[j];
             arr[j]= temp;
