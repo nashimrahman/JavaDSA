@@ -1,32 +1,31 @@
 import java.util.*;
 
 public class roughWork {
-
     public static void main(String[] args) {
-
-
-    }
-
-    public int firstUniqChar(String s) {
-        // convert into array
-        char[] arr = s.toCharArray();
-        HashMap<Character, Integer> map = new HashMap<>();
-        //inserting values as key-value pair
-        for (char ch : map.keySet()) {
-            map.put(ch, map.getOrDefault(ch, 0) + 1);
+        int[] arr = {1, 2, 3};
+        // array length
+        int n = arr.length;
+        int mul=0;
+        for (int i = 0; i < n; i++) {
+            mul = mul*10+arr[i];
         }
+        mul += 1;
+        System.out.println(mul);
 
-        int maxValue=0;
-        for (int i: map.keySet()){
-            int currentValue = map.get(i);
-            if (currentValue> maxValue){
-                //update max value
-                maxValue= currentValue;
-                return maxValue;
-            }
-        }
+//        // now removing digits then add
+//        int[] newArr = new int[n + 1];
+//        int index = n;
+//        while (sum != 0) {
+//            //taking out digits
+//            int digit = sum % 10;
+//            // adding digits in new array
+//            newArr[index] = digit;
+//            //removing digits
+//            sum /= 10;
+//            index--;
+//        }
 
-        return -1;
+
     }
 }
 
