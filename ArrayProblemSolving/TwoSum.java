@@ -1,6 +1,6 @@
 package ArrayProblemSolving;
 
-public class question17 {
+public class TwoSum {
     static void main(String[] args) {
         // Two sum -> find two values which equals to the target
         int[] arr= {1,3,5,6,4};
