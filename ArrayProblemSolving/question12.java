@@ -6,7 +6,7 @@ public class question12 {
     static void main(String[] args) {
         // find mode of an array -> frequency
         int[] arr = {1, 1, 1, 1, 3, 3, 2, 2, 2,2,2,2,2,2,2, 5, 5, 5};
-        System.out.println(getMode(arr));
+        System.out.println(getMode(arr)); // ans is: 2
 
     }
 
