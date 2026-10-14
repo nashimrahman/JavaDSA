@@ -1,6 +1,7 @@
 package ArrayProblemSolving;
 
-public class question19 {
+public class LeetCode26 {
+    // LeetCode 26
     static void main(String[] args) {
     int[] arr = {1,2,2,3,3,4};
     int n = arr.length;
