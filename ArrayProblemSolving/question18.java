@@ -20,7 +20,6 @@ public class question18 {
         for (int index=0; index<n; index++){
             // getting the value
             int value= Math.abs(arr[index]);
-            // ideal positon of the value
             int idealPosition = value-1;
             // marking the values with -ve sign to avoid value lost
             if (arr[idealPosition]>0){
@@ -37,8 +36,5 @@ public class question18 {
         }
 
         System.out.println(list);
-
-
-
     }
 }
