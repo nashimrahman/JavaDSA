@@ -5,12 +5,12 @@ public class question4repeat {
         // power of 2
         // direct formula -> n&(n-1) == 0 -> power of 2
 
-        int n =8;
+        int n =10;
         if ((n&(n-1)) ==0){
-            System.out.println("Even");
+            System.out.println("Power of Two");
         }
         else {
-            System.out.println("Odd");
+            System.out.println("No");
         }
 
     }
