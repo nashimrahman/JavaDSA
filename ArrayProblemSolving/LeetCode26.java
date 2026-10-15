@@ -11,7 +11,6 @@ public class LeetCode26 {
        int j= i+1;
 
        while( j<n ){
-
            // unique element
            if(arr[i] != arr[j]){
                i++;
