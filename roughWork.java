@@ -1,25 +1,29 @@
+import javax.swing.*;
 import java.util.*;
 
 public class roughWork {
     public static void main(String[] args) {
 
-        int[] nums = {2, 1, 2, 1, 1, 2, 2};
-        int n = nums.length;
-        HashMap<Integer, Integer> map = new HashMap<>();
+        int n = 2;
+        int[] arr = new int[n + 1];
+        ArrayList<Integer> list = new ArrayList<>();
 
-        for (int key : nums) {
-            map.put(key, map.getOrDefault(key, 0) + 1);
-        }
-
-        for (int i: map.keySet()){
-            int currrentKey =i;
-            int currentValue= map.get(i);
-            if (currentValue>n/2){
-                System.out.println(currrentKey);
+        for (int i = 0; i <= n; i++) {
+            int count = 0;
+            int v= i;
+            while (v != 0) {
+                if ((v & 1) != 0) {
+                    count++;
+                }
+                //right shift to remove the bit
+                v = v >> 1;
             }
-
+            arr[i] = count;
         }
 
+        for (int ans: arr){
+            System.out.print(ans);
+        }
 
     }
 }
