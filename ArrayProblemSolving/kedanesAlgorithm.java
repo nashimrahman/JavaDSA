@@ -9,14 +9,13 @@ public class kedanesAlgorithm {
         int maxSum = Integer.MIN_VALUE;
 
         for (int i = 0; i < arr.length; i++) {
-            // adding values
+            //step1: creating sum
             sum += arr[i];
-            if (sum >= maxSum) {
-                // updating sum
-                maxSum = sum;
-            } else if (sum < 0) {
-                sum = 0;
-            }
+            //step2: updating max
+            maxSum = Math.max(maxSum, sum);
+            //step3: checking sum-> 0 if negative
+            if(sum<0) sum=0;
+
         }
 
         //print
