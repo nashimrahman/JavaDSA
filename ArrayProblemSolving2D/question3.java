@@ -1,5 +1,8 @@
 package ArrayProblemSolving2D;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class question3 {
     static void main(String[] args) {
         // wave print of a matrix
@@ -9,6 +12,8 @@ public class question3 {
                 {3,5,7,1},
                 {2,6,4,3},};
 
+        List<Integer> list = new ArrayList<>();
+
         int n= arr.length;
         int m= arr[0].length;
 
@@ -17,17 +22,18 @@ public class question3 {
             if ((col&1)==0){
                 // top to bottom
                 for (int row=0; row<n; row++){
-                    System.out.print(arr[row][col]);
+                    list.add(arr[row][col]);
                 }
             }
             // else -> print bottom to top
             else {
                 for (int row=n-1; row>=0; row--){
-                    System.out.print(arr[row][col]);
+                    list.add(arr[row][col]);
                 }
             }
-
         }
+
+        System.out.println(list);
 
 
 
