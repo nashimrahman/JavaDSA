@@ -32,6 +32,7 @@ public class question4 {
             for (int j=0; j< newCol; j++){
                 System.out.print(ans[i][j] + " ");
             }
+            //move to next row
             System.out.println();
         }
 
