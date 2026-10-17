@@ -7,11 +7,9 @@ public class question7 {
     static void main(String[] args) {
         // spiral print of a matrix
         int[][] arr = {
-                {2, 8, 7, 4, 7},
-                {8, 1, 9, 2, 3},
-                {3, 5, 7, 1, 1},
-                {2, 6, 4, 3, 5},
-                {6, 2, 9, 2, 8},};
+                {1,2,3,4},
+                {5,6,7,8},
+                {9,10,11,12},};
 
         List<Integer> list = new ArrayList<>();
 
@@ -41,17 +39,21 @@ public class question7 {
 
 
             // row wise right to left
-            for (int col= endingCol; col>=startingCol; col--){
-                list.add(arr[endingRow][col]);
+            if(startingRow<= endingRow) {
+                for (int col = endingCol; col >= startingCol; col--) {
+                    list.add(arr[endingRow][col]);
+                }
+                endingRow--;
             }
-            endingRow--;
-
 
             // col wise bottom to top
-            for (int row= endingRow; row>=startingRow; row--){
-                list.add(arr[row][startingCol]);
+            if (startingCol<= endingCol) {
+                for (int row = endingRow; row >= startingRow; row--) {
+                    list.add(arr[row][startingCol]);
+                }
+                startingCol++;
+
             }
-            startingCol++;
         }
 
 
