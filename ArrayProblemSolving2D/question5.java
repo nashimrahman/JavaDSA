@@ -11,21 +11,19 @@ public class question5 {
         int n = arr.length;
         int m = arr[0].length;
 
-        int newRow = m;
-        int newCol = n;
-
-        int[][] transposeMatrix = new int[newRow][newCol];
-
+        // transpose the give matrix
         for (int i=0; i<n; i++){
-            for(int j=0; j<m; j++){
-               transposeMatrix[i][j] = arr[j][i];
+            for(int j=i+1; j<m; j++){
+                int temp = arr[i][j];
+                arr[i][j] = arr[j][i];
+                arr[j][i] = temp;
             }
         }
 
-        // now rotate 90 degree -> traverse in new array
-        for (int row=0; row< newRow; row++){
-            for (int col=newCol-1; col>=0; col--){
-                System.out.print(transposeMatrix[row][col] + " ");
+        // now traverse rows in reverse direction
+        for (int row=0; row< n; row++){
+            for (int col=m-1; col>=0; col--){
+                System.out.print(arr[row][col] + " ");
             }
             // move to next row
             System.out.println();
