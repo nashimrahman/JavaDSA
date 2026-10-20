@@ -2,6 +2,7 @@ package Algorithms;
 
 public class pivotIndexOfRotatedArray {
     static void main(String[] args) {
+        // find pivot index of a roated sorted array
         int[] arr = {50, 60, 70, 10, 20, 30, 40};
 
         int s = 0;
