@@ -2,6 +2,7 @@ package Algorithms;
 
 public class findPeakofMountain {
     static void main(String[] args) {
+        //find max value in the array using B.S
         int[] arr = {10, 20, 35, 40, 77, 65, 35};
 
 
