@@ -5,7 +5,6 @@ public class question4 {
         // transpose of a matrix
         int[][] arr = {
                 {2, 8, 7, 4},
-                {8, 1, 9, 2},
                 {3, 5, 7, 1},
                 {2, 6, 4, 3},};
 
@@ -23,7 +22,7 @@ public class question4 {
         //logic
         for (int row=0; row<n; row++){
             for(int col=0; col<m ; col++){
-                ans[row][col] = arr[col][row];
+                ans[col][row] = arr[row][col];
             }
         }
 
