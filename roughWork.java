@@ -52,6 +52,11 @@ public class roughWork {
         int e = n - 1;
         int ans = -1;
 
+        //no effective rotation
+        if( arr[s] <= arr[e]){
+            return -1;
+        }
+
         while (s <= e) {
             int mid = s + (e - s) / 2;
 
