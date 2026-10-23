@@ -21,7 +21,7 @@ public class bookAllocationProbem {
 
         while (s <= e) {
             int mid = s + (e - s) / 2;
-            if (isValidAnswer(arr, k, mid)) {
+            if (isValidAnswer(arr, k, mid)) {  //helper function
                 // true
                 ans = mid;
                 e = mid - 1;
