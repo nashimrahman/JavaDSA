@@ -56,12 +56,13 @@ public class painterPartitionProblem {
             } else{
                 // move to next painter
                 painter++;
+                length = 0;
+
                 // if individual length is greater than mid
                 if(arr[i] > mid || painter > k){
                     return false;
                 } else{
-                    //
-                    length = 0;
+                    // adding length for next painter
                     length += arr[i];
                 }
             }
