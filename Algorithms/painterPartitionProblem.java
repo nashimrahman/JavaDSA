@@ -3,6 +3,15 @@ package Algorithms;
 import java.rmi.dgc.VMID;
 
 public class painterPartitionProblem {
+
+    /*Given an array arr[] where each element denotes the length of a board,
+    and an integer k representing the number of painters available.
+    Each painter takes 1 unit of time to paint 1 unit length of a board.
+    Each painter can paint only a contiguous sequence of boards (no skipping or splitting allowed).
+    Find the minimum amount of time required to paint all the boards.
+    */
+
+
     static void main(String[] args) {
         int[] arr ={10,20,30,40,50};
         System.out.println(minTime(arr,3));
