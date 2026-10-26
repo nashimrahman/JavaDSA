@@ -19,7 +19,6 @@ public class painterPartitionProblem {
 
     }
     public static int minTime(int[] arr, int k) {
-        // code here
         int sum = 0;
         for (int i: arr) {
             sum += i;

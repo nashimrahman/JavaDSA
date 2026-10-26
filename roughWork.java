@@ -2,25 +2,13 @@ import java.util.*;
 
 public class roughWork {
     public static void main(String[] args) {
-       String s = "leeeetcode";
-        char[] ch = s.toCharArray();
-        List<Integer> list = new ArrayList<>();
-        int i = 0;
-        int j = 1;
-        int count= 0;
-        while (j<ch.length){
+       String a = "aa";
+       String b = "aab";
 
-            if(ch[i] != ch[j]){
-                i++;
-                j++;
-            } else if (ch[i] == ch[j]) {
-                count++;
-                j++;
-            }
-            list.add(count);
-        }
+       if(b.contains(a)){
+           System.out.println("True");
+       }
 
-        System.out.println(list);
 
     }
 }
