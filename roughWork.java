@@ -4,26 +4,29 @@ import java.util.*;
 public class roughWork {
     public static void main(String[] args) {
 
-      String[]  ops = {"5", "-2", "4",  "C", "D", "9", "+", "+"};
+        int[] prices = {7, 1, 5, 3, 6, 4};
 
-      List<Integer> list = new ArrayList<>();
+        int max = prices[0];
+        int min = prices[0];
 
-      for(String i: ops){
-          if(i.equals("C")){
-              list.remove(list.size()-1);
-          } else if (i.equals("D")) {
-              list.add(2* list.get(list.size()-1));
-          } else if (i.equals("+")) {
-              list.add(list.get(list.size()-1)+ list.get(list.size()-2));
-          } else {
-              list.add(Integer.parseInt(i));
-          }
-      }
+        int buyDay = 0;
 
-      for (int i:list){
-          
-      }
+        for (int i = 0; i < prices.length; i++) {
+            if (prices[i] <= min) {
+                min = prices[i];
+                max = prices[i];
+                buyDay = i;
+            }
+        }
 
+        for (int i = buyDay; i < prices.length; i++) {
+            if (prices[i] >= max) {
+                max = prices[i];
+            }
+        }
+
+        int profit = max - min;
+        System.out.println(profit);
 
 
     }
