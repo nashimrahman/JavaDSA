@@ -4,30 +4,25 @@ import java.util.*;
 public class roughWork {
     public static void main(String[] args) {
 
-        int[][] coins = {{8, 10, 1}, {1, 3, 2}, {5, 6, 4}};
+      String[]  ops = {"5", "-2", "4",  "C", "D", "9", "+", "+"};
 
-        int[] arr = new int[15];
+      List<Integer> list = new ArrayList<>();
 
-        int row = coins.length;
-        int col = coins[0].length;
+      for(String i: ops){
+          if(i.equals("C")){
+              list.remove(list.size()-1);
+          } else if (i.equals("D")) {
+              list.add(2* list.get(list.size()-1));
+          } else if (i.equals("+")) {
+              list.add(list.get(list.size()-1)+ list.get(list.size()-2));
+          } else {
+              list.add(Integer.parseInt(i));
+          }
+      }
 
-        for (int i = 0; i < row; i++) {
-            int l = coins[i][0];
-            int r = coins[i][1];
-            int c = coins[i][2];
-
-            for (int j = l; j <= r; j++) {
-                arr[j] = c;
-            }
-
-        }
-
-        int sum = 0;
-        for (int i : arr) {
-            sum += i;
-        }
-
-
+      for (int i:list){
+          
+      }
 
 
 
