@@ -8,7 +8,6 @@ public class roughWork {
         System.out.println(minEatingSpeed(piles, h));
 
     }
-
     public static int minEatingSpeed(int[] piles, int h) {
 
         int maxSpeed = 0;
@@ -35,22 +34,22 @@ public class roughWork {
 
         return ans;
     }
-    static boolean isValid(int[] arr, int timeLimit, int mid){
-//        int bananaCount = 0;
-        int hour = 0;
-        int remainingBanana = 0;
 
-        for(int i =0; i< arr.length; i++){
-            if(mid<= arr[i]){
+    static boolean isValid(int[] arr, int timeLimit, int mid) {
+        int hour = 0;
+        for(int i =0; i< arr.length; i++) {
+            int remainingBanana = arr[i];
+
+            while(remainingBanana > 0){
+                remainingBanana = remainingBanana - mid;
                 hour++;
             }
-            else{
-                remainingBanana = arr[i] - mid;
+            if(hour> timeLimit){
+                return false;
             }
 
         }
 
-
-
+        return true;
     }
 }
