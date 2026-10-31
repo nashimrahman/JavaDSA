@@ -2,6 +2,7 @@ package Algorithms;
 
 public class searchIn2Darray {
     static void main(String[] args) {
+        //if matrix is sorted
 
         int[][] arr = {
                 {1, 3, 5, 7},
