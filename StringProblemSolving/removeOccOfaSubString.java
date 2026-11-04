@@ -11,7 +11,7 @@ public class removeOccOfaSubString {
         //jab part exist krta he tab tak ye do steps karenge
         while(s.contains(part)){
             int index = s.indexOf(part);
-            s = s.substring(0, index) + s.substring(index, part.length());
+            s = s.substring(0, index) + s.substring(index + part.length());
         }
         return s;
     }
