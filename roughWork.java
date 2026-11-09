@@ -4,29 +4,30 @@ import java.util.*;
 public class roughWork {
 
     static void main(String[] args) {
-        int[] arr = {1,2,3,4,4,3,2,1};
-//        [1,4,2,3,3,2,4,1]
-        int n = 4;
-        int[] ans = shuffle(arr, n);
+        int[] arr = {1,2,2,1};
+        System.out.println(duplicateNumbersXOR(arr));
 
-        for(int i: ans){
-            System.out.print(i);
-        }
+
+
+
     }
 
-    public static int[] shuffle(int[] nums, int n) {
-        int[] ans = new int[nums.length];
-        int i = 0;
-        int j = n;
+    public static int duplicateNumbersXOR(int[] nums) {
+        HashMap<Integer, Integer> map = new HashMap<>();
 
-        for(int index = 0; index < n; index++){
-                ans[2*index] = nums[i];  // store in the odd index
-                i++;
-                ans[2*index+1] =  nums[j];  // store in the even index
-                j++;
+        for(int key :nums){
+            map.put(key, map.getOrDefault(key, 0)+1);
         }
 
-        return ans;
+        int xorSum = 0;
+        for(int i: map.keySet()){
+            if(map.get(i) == 2){
+                xorSum = xorSum^i;
+            }
+        }
+
+        return xorSum;
     }
+
 
 }
