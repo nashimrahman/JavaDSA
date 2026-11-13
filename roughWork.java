@@ -4,30 +4,33 @@ import java.util.*;
 public class roughWork {
 
     static void main(String[] args) {
-        int[] arr = {1,2,2,1};
-        System.out.println(duplicateNumbersXOR(arr));
-
-
+        int[] arr = {1, 1,0,1,1,1};
+        System.out.println(findMaxConsecutiveOnes(arr));
 
 
     }
 
-    public static int duplicateNumbersXOR(int[] nums) {
-        HashMap<Integer, Integer> map = new HashMap<>();
+        public static int findMaxConsecutiveOnes(int[] nums) {
 
-        for(int key :nums){
-            map.put(key, map.getOrDefault(key, 0)+1);
-        }
+            List<Integer> list = new ArrayList<>();
 
-        int xorSum = 0;
-        for(int i: map.keySet()){
-            if(map.get(i) == 2){
-                xorSum = xorSum^i;
+            int max = 0;
+            for(int i =0; i<nums.length; i++){
+                int count = 0;
+                if(nums[i] == 1){
+                    count++;
+                }
+                list.add(count);
             }
-        }
 
-        return xorSum;
+            for(int i=0; i< list.size(); i++){
+                if(list.get(i) >= max){
+                    max = list.get(i);
+                }
+            }
+
+            return max;
+        }
     }
 
 
-}
