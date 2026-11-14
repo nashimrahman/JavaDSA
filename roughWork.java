@@ -18,6 +18,9 @@ public class roughWork {
             if (nums[i] == 1) {
                 count++;
                 ans = Math.max(ans, count);
+
+
+
                 System.out.println(Math.abs(25-65));
             } else {
                 count = 0; // reset count
