@@ -16,6 +16,7 @@ public class reverseWords {
             if(i<0){
                 break;
             }
+
             int j = i;
             // find the start index of the word
             while(j >=0 && s.charAt(j) != ' '){
